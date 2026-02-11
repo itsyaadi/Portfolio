@@ -1,0 +1,40 @@
+---
+const skillCards = [
+  {
+    title: "Data Intelligence",
+    desc: "Experience in Data Science with Python, building intelligent recommendation and summarization models.",
+    tags: ["Python", "SQL", "ML", "Data Science"]
+  },
+  {
+    title: "Cybersecurity",
+    desc: "Ongoing training in Ethical Hacking and Network Security, focusing on vulnerability assessment.",
+    tags: ["Ethical Hacking", "Linux", "Network Security"]
+  },
+  {
+    title: "Core Engineering",
+    desc: "Strong foundation in C, C++, and system architecture developed during my Bachelors at KEC.",
+    tags: ["C", "C++", "System Architecture"]
+  },
+  {
+    title: "Design & Research",
+    desc: "Skilled in Graphics Design using Figma/Canva and bridging the gap from project to research paper.",
+    tags: ["Figma", "Canva", "Research"]
+  }
+];
+---
+<section id="skills" class="py-32 border-t border-white/5">
+    <div class="text-blue-500 text-[10px] mb-16 font-bold tracking-[0.4em] uppercase">Expertise</div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {skillCards.map((s) => (
+            <div class="border border-white/10 p-10 bg-slate-900/20 rounded-sm hover:border-blue-600/50 transition-all">
+                <h3 class="text-2xl font-bold text-white mb-6 tracking-tight">{s.title}</h3>
+                <p class="text-slate-400 mb-8 italic leading-relaxed">{s.desc}</p>
+                <div class="flex flex-wrap gap-2">
+                    {s.tags.map((tag) => (
+                        <span class="text-[9px] text-blue-500 border border-blue-500/30 px-2 py-1 uppercase font-bold tracking-widest">{tag}</span>
+                    ))}
+                </div>
+            </div>
+        ))}
+    </div>
+</section>

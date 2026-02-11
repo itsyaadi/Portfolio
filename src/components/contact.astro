@@ -1,0 +1,50 @@
+---
+const email = "aadityabhandari770@gmail.com";
+const linkedin = "linkedin.com/in/aaditya-bhandari-b4a534212/";
+const github = "github.com/itsyaadi";
+---
+<section id="contact" class="py-32 border-t border-white/5">
+    <div class="text-blue-500 text-[10px] mb-16 font-bold tracking-[0.4em] uppercase">05. Contact</div>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div class="space-y-8">
+            <h2 class="text-5xl font-bold text-white tracking-tighter">Let's build <br/><span class="text-blue-600">something great.</span></h2>
+            <p class="text-zinc-400 text-lg">Currently seeking opportunities in Data Science and Cybersecurity.</p>
+            
+            <div class="grid grid-cols-1 gap-4 pt-4">
+                <a href={`mailto:${email}`} class="group p-6 bg-white/5 border border-white/10 rounded-xl hover:border-blue-500/50 transition-all">
+                    <span class="block text-[10px] text-zinc-500 uppercase font-bold tracking-widest mb-2">Email Me</span>
+                    <span class="text-white text-lg font-bold group-hover:text-blue-500 transition-colors">{email}</span>
+                </a>
+                
+                <div class="flex gap-4">
+                    <a href={`https://${linkedin}`} target="_blank" class="flex-1 p-6 bg-white/5 border border-white/10 rounded-xl hover:border-blue-500/50 transition-all">
+                        <span class="block text-[10px] text-zinc-500 uppercase font-bold tracking-widest mb-2">LinkedIn</span>
+                        <span class="text-white font-bold">Connect ↗</span>
+                    </a>
+                    <a href={`https://${github}`} target="_blank" class="flex-1 p-6 bg-white/5 border border-white/10 rounded-xl hover:border-blue-500/50 transition-all">
+                        <span class="block text-[10px] text-zinc-500 uppercase font-bold tracking-widest mb-2">Github</span>
+                        <span class="text-white font-bold">Follow ↗</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="lg:pl-20 flex flex-col justify-center border-l border-white/5">
+            <div class="space-y-12">
+                <div>
+                    <span class="block text-[10px] text-blue-500 uppercase font-bold tracking-widest mb-4">Based In</span>
+                    <p class="text-2xl text-white font-light italic">Lalitpur, Nepal</p>
+                </div>
+                <div>
+                    <span class="block text-[10px] text-blue-500 uppercase font-bold tracking-widest mb-4">Phone</span>
+                    <p class="text-2xl text-white font-light italic">+977 9824369314</p>
+                </div>
+                <div>
+                    <span class="block text-[10px] text-blue-500 uppercase font-bold tracking-widest mb-4">Availability</span>
+                    <p class="text-2xl text-white font-light italic">Available for Freelance & Full-time</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
